@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-
 typedef struct {
     int day, month, year;
 } date;
@@ -17,14 +13,14 @@ typedef struct {
 typedef struct {
     char name[255];
     double price;
-} Product;
+} Equipment;
 
 
 typedef struct {
     char name[255];
     double price;
-    Product product;
-} Equipment;
+    Equipment equipment; // ??? equipment in product or product in equipment ???
+} Product;
 
 
 typedef struct {
@@ -36,10 +32,11 @@ typedef struct {
 
 typedef struct {
     Person person;
-    Profession proffesion;
+    Profession profession;
     double salary;
     date employed;
     double experience;
+    double product_rate;
 } Employee;
 
 
@@ -57,4 +54,3 @@ typedef struct {
     date employed;
     double experience;
 } Head;
-
