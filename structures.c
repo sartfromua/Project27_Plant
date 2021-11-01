@@ -22,6 +22,7 @@ typedef struct {
 
 typedef struct {
     char name[255];
+    double price;
     Product product;
 } Equipment;
 
@@ -38,6 +39,7 @@ typedef struct {
     Profession proffesion;
     double salary;
     date employed;
+    double experience;
 } Employee;
 
 
@@ -45,6 +47,7 @@ typedef struct {
     Person person;
     double salary;
     date employed;
+    double experience;
 } Deputy;
 
 
@@ -52,4 +55,6 @@ typedef struct {
     Person person;
     double salary;
     date employed;
+    double experience;
 } Head;
+
