@@ -2,7 +2,7 @@
 #include "structures.h"
 
 int main() {
-    Employee emp;
-    emp = inputEmployee();
-    printEmployee(emp);
+    Head head;
+    head = inputHead();
+    printHead(head);
 }
