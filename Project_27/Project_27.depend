@@ -1,0 +1,94 @@
+# depslib dependency file v1.0
+1635880574 source:c:\users\sartf\documents\project_27\structures.c
+
+1636042352 source:c:\users\sartf\documents\project_27\main.c
+	<stdio.h>
+	"Headers/date.h"
+	"Headers/person.h"
+	"Headers/product.h"
+	"Headers/equipment.h"
+	"Headers/profession.h"
+	"Headers/employee.h"
+	"Headers/deputy.h"
+	"Headers/head.h"
+
+1635881393 c:\users\sartf\documents\project_27\structures.h
+
+1635792993 c:\users\sartf\documents\project_27\structures.c
+
+1635880786 source:c:\users\sartf\documents\project_27\input.c
+	<stdio.h>
+	"structures.h"
+
+1635881468 source:c:\users\sartf\documents\project_27\print.c
+	<stdio.h>
+	"structures.h"
+
+1636008687 source:c:\users\sartf\documents\project_27\date.c
+	<stdio.h>
+	"date.h"
+
+1636009515 c:\users\sartf\documents\project_27\date.h
+
+1636009582 c:\users\sartf\documents\project_27\person.h
+	"date.h"
+
+1636040360 c:\users\sartf\documents\project_27\headers\date.h
+
+1636042017 c:\users\sartf\documents\project_27\headers\person.h
+	"date.h"
+
+1636010698 c:\users\sartf\documents\project_27\headers\product.h
+	"equipment.h"
+
+1636012585 c:\users\sartf\documents\project_27\headers\equipment.h
+
+1636011123 c:\users\sartf\documents\project_27\headers\profession.h
+	"profession.h"
+	"equipment.h"
+
+1636011313 c:\users\sartf\documents\project_27\headers\employee.h
+	"date.h"
+	"profession.h"
+	"person.h"
+
+1636041559 c:\users\sartf\documents\project_27\headers\deputy.h
+	"employee.h"
+
+1636011699 c:\users\sartf\documents\project_27\headers\head.h
+	"employee.h"
+
+1636041490 source:c:\users\sartf\documents\project_27\sources\date.c
+	"../Headers/date.h"
+	<stdio.h>
+
+1636012692 source:c:\users\sartf\documents\project_27\sources\person.c
+	"../Headers/person.h"
+	"../Headers/date.h"
+
+1636012771 source:c:\users\sartf\documents\project_27\sources\employee.c
+	"../Headers/employee.h"
+	"../Headers/date.h"
+	"../Headers/profession.h"
+	"../Headers/person.h"
+
+1636012766 source:c:\users\sartf\documents\project_27\sources\equipment.c
+	"../Headers/equipment.h"
+
+1636012763 source:c:\users\sartf\documents\project_27\sources\head.c
+	"../Headers/head.h"
+	"../Headers/employee.h"
+
+1636012757 source:c:\users\sartf\documents\project_27\sources\product.c
+	"../Headers/product.h"
+	"../Headers/equipment.h"
+
+1636012753 source:c:\users\sartf\documents\project_27\sources\profession.c
+	"../Headers/profession.h"
+	"../Headers/equipment.h"
+
+1636041961 source:c:\users\sartf\documents\project_27\sources\deputy.c
+	"../Headers/deputy.h"
+	"../Headers/employee.h"
+	<stdio.h>
+
