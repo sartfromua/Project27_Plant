@@ -8,5 +8,7 @@ typedef struct {
 
 Head inputHead();
 void printHead();
+int intHead(const char* fname, Head head);
+Head foutHead(const char* fname);
 
 #endif // _HEAD_H_

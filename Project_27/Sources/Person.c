@@ -24,40 +24,20 @@ void printPerson(Person person) {
 }
 
 
-int finChar(const char* fname, char* name) {
-    FILE *file = fopen(fname, "wb+");
-    int res = fwrite(&name, sizeof(char), strlen(name), file);
+int finPerson(const char* fname, Person person){
+    FILE *file = fopen(fname, "w");
+    int res = fprintf(file, "%d %d %d %s %s %s", person.birthday.day, person.birthday.month, person.birthday.year, \
+                       person.name, person.surname, person.sex);
     fclose(file);
     return res;
-}
-
-
-int finPerson(const char* fname, Person person){
-    remove(fname); // not so good idea, but may work to clear file
-    FILE *file = fopen(fname, "wb+");
-    int res = finChar(fname, person.name);
-    if (res != strlen(person.name)) return 1;
-    res = finChar(fname, person.surname);
-    if (res != strlen(person.surname)) return 2;
-    res = finChar(fname, person.sex);
-    if (res != strlen(person.sex)) return 3;
-    int birth[];
-    birth[0] = person.birthday.day;
-    birth[1] = person.birthday.month;
-    birth[2] = person.birthday.year;
-    res = fwrite(&birth, sizeof(int), 3, file);
-    if (res != 3) return 4;
-    fclose(file);
-    return 0;
 }
 
 
 Person foutPerson(const char* fname) {
     FILE *file = fopen(fname, "rb");
     Person person;
-
-    // ??? how to execute only one char list, when there are 3 of them in file?
-
+    int res = fscanf(file, "%d %d %d %s %s %s", &person.birthday.day, &person.birthday.month, &person.birthday.year, \
+                       &person.name, &person.surname, &person.sex);
     fclose(file);
     return person;
 }

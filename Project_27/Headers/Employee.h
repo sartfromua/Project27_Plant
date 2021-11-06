@@ -15,5 +15,7 @@ typedef struct {
 
 Employee inputEmployee();
 void printEmployee();
+int finEmployee(const char* fname, Employee employee);
+Employee foutEmployee(const char* fname);
 
 #endif // _EMPLOYEE_H_

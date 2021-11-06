@@ -11,5 +11,7 @@ typedef struct {
 
 Profession inputProfession();
 void printProfession();
+int finProfession(const char* fname, Profession profession);
+Profession foutProfession(const char* fname);
 
 #endif // _PROFESSION_H_

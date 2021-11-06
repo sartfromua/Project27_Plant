@@ -8,7 +8,9 @@ typedef struct {
     Equipment equipment; // ??? equipment in product or product in equipment ???
 } Product;
 
-Equipment inputEquipment();
-void printEquipment();
+Product inputProduct();
+void printProduct();
+int finProduct(const char* fname, Product product);
+Product foutProduct(const char* fname);
 
 #endif // _PRODUCT_H_

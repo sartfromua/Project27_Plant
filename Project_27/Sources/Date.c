@@ -16,26 +16,18 @@ date inputDate() {
 
 
 int finDate(const char* fname, date date1) {
-    FILE *file = fopen(fname, "wb");
-    int items[3];
-    items[0] = date1.day;
-    items[1] = date1.month;
-    items[2] = date1.year;
-    int res = fwrite(items, sizeof(int), 3, file);
+    FILE *file = fopen(fname, "w");
+    int res = fprintf(file, "%d %d %d", date1.day, date1.month, date1.year);
     fclose(file);
     return res;
 }
 
 
 date foutDate(const char* fname) {
-    FILE *file = fopen(fname, "rb");
+    FILE *file = fopen(fname, "r");
     int items[3];
-    int res = fread(&items, sizeof(int), 3, file);
-    if (res != 3) printf("FOUTDATE FREAD_RES = %d", res);
-    fclose(file);
     date date1;
-    date1.day = items[0];
-    date1.month = items[1];
-    date1.year = items[2];
+    int res = fscanf(file, "%d %d %d", &date1.day, &date1.month, &date1.year);
+    fclose(file);
     return date1;
 }

@@ -8,5 +8,7 @@ typedef struct {
 
 void printEquipment();
 Equipment inputEquipment();
+int finEquipment(const char* fname, Equipment equipment);
+Equipment foutEquipment(const char* fname);
 
 #endif // _EQUIPMENT_H_
