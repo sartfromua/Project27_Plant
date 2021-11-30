@@ -50,7 +50,6 @@ int Person::fout(const char* fname) {
     fout << name << " " << surname << " " << sex << " " << day << " " << month << " " << year;
     fout.close();
     return 1;
-
 }
 
 

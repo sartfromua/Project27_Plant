@@ -46,6 +46,7 @@
 		<Unit filename="Headers/Person.h" />
 		<Unit filename="Headers/Product.h" />
 		<Unit filename="Headers/Profession.h" />
+		<Unit filename="Headers/data_base.h" />
 		<Unit filename="Sourses/Date.cpp" />
 		<Unit filename="Sourses/Deputy.cpp" />
 		<Unit filename="Sourses/Employee.cpp" />
@@ -54,6 +55,7 @@
 		<Unit filename="Sourses/Person.cpp" />
 		<Unit filename="Sourses/Product.cpp" />
 		<Unit filename="Sourses/Profession.cpp" />
+		<Unit filename="Sourses/data_base.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

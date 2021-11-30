@@ -8,7 +8,7 @@ using namespace std;
 void Product::input() {
     cout << "*****Product*****" << endl;
     cout << "Name: ";
-    cin >> name;
+    getline(cin, name);
     cout << "Price: ";
     cin >> price;
 }
