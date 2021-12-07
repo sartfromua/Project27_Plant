@@ -1,1 +1,1 @@
-programmist 3000.000000 PC 15000.000000
+IT-developer 4500 PC 20000 IT-product 1000
