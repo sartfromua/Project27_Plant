@@ -1,0 +1,6 @@
+Employee Bogdan Bakun Male 21 5 2003 programmer 3000 PC 15000.1 program 500 22 7 2022 3 3.2 15000
+Employee Tatiana Shokhina Female 20 1 2003 Designer 2500.7 Tablet 7000 Room 800.5 20 8 2023 2 2.8 12000
+Employee Ivan Ivanov Male 23 3 2003 PC-designer 2000 PC 7000 PC 10000 23 6 2023 1.5 1.5 13000
+Employee Anna Byvalkevych Female 5 4 2003 SMM-manager 2700 Tablet 7000 SMM 750 21 8 2023 5 3.5 14000
+Employee Oleg Kulynich Male 27 9 2003 Weilder 2000 Welding-Machine 9000 weld 300 23 7 2023 4 7.5 11000
+Head Volodymir Shapoval Male 20 7 1976 Petrov 3 Bogdan Bakun Tatiana Shokhina Oleg Kulinich

@@ -14,8 +14,8 @@ typedef struct {
 } Employee;
 
 Employee inputEmployee();
-void printEmployee();
-int finEmployee(const char* fname, Employee employee);
-Employee foutEmployee(const char* fname);
+void printEmployee(Employee employee);
+Employee finEmployee(const char* fname);
+int foutEmployee(const char* fname, Employee employee);
 
 #endif // _EMPLOYEE_H_

@@ -20,7 +20,7 @@ Product inputProduct() {
 }
 
 
-int finProduct(const char* fname, Product product) {
+int foutProduct(const char* fname, Product product) {
     FILE *file = fopen(fname, "w");
     int res = fprintf(file, "%s %lf %s %lf", product.name, product.price, product.equipment.name, product.equipment.price);
     fclose(file);
@@ -28,7 +28,7 @@ int finProduct(const char* fname, Product product) {
 }
 
 
-Product foutProduct(const char* fname) {
+Product finProduct(const char* fname) {
     FILE *file = fopen(fname, "r");
     Product product;
     int res = fscanf(file, "%s %lf %s %lf", &product.name, &product.price, &product.equipment.name, &product.equipment.price);

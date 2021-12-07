@@ -24,7 +24,7 @@ void printPerson(Person person) {
 }
 
 
-int finPerson(const char* fname, Person person){
+int foutPerson(const char* fname, Person person){
     FILE *file = fopen(fname, "w");
     int res = fprintf(file, "%d %d %d %s %s %s", person.birthday.day, person.birthday.month, person.birthday.year, \
                        person.name, person.surname, person.sex);
@@ -33,7 +33,7 @@ int finPerson(const char* fname, Person person){
 }
 
 
-Person foutPerson(const char* fname) {
+Person finPerson(const char* fname) {
     FILE *file = fopen(fname, "rb");
     Person person;
     int res = fscanf(file, "%d %d %d %s %s %s", &person.birthday.day, &person.birthday.month, &person.birthday.year, \

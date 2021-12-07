@@ -15,7 +15,7 @@ date inputDate() {
 }
 
 
-int finDate(const char* fname, date date1) {
+int foutDate(const char* fname, date date1) {
     FILE *file = fopen(fname, "w");
     int res = fprintf(file, "%d %d %d", date1.day, date1.month, date1.year);
     fclose(file);
@@ -23,7 +23,7 @@ int finDate(const char* fname, date date1) {
 }
 
 
-date foutDate(const char* fname) {
+date finDate(const char* fname) {
     FILE *file = fopen(fname, "r");
     int items[3];
     date date1;

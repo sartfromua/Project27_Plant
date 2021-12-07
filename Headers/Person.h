@@ -9,8 +9,8 @@ typedef struct {
 
 
 Person inputPerson();
-void printPerson();
-int finPerson(const char* fname, Person person);
-Person foutPerson(const char* fname);
+void printPerson(Person person);
+Person finPerson(const char* fname);
+int foutPerson(const char* fname, Person person);
 
 #endif // _PERSON_H_
