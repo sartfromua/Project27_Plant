@@ -1,0 +1,4 @@
+Employee 15 4 2002 Ivan Ivanov Male Weilder 1000.000000 Weild-machine 25000.000000 225000.000000 25 9 2023 5.000000 45.000000
+Employee 21 5 2003 Bogdan Bakun Male IT-spec 3000 PC 15000 20700 22 7 2022 3 2.3
+Employee 20 1 2003 Tatiana Shokhina Female Designer 2300 Notebook 20000 24150 30 8 2022 1.5 7
+Head 1 2 2000 Ivan Ivanov Male 2 Bakun Shokhina
