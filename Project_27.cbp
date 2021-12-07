@@ -39,6 +39,7 @@
 		<Unit filename="Headers/Person.h" />
 		<Unit filename="Headers/Product.h" />
 		<Unit filename="Headers/Profession.h" />
+		<Unit filename="Headers/data_base.h" />
 		<Unit filename="Sources/Date.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -61,6 +62,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Sources/Profession.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sources/data_base.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.c">

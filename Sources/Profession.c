@@ -19,7 +19,7 @@ Profession inputProfession() {
 }
 
 
-int finProfession(const char* fname, Profession profession) {
+int foutProfession(const char* fname, Profession profession) {
     FILE *file = fopen(fname, "w");
     int res = fprintf(file, "%s %lf %s %lf", profession.name, profession.wage_rate, profession.equipment.name, \
                       profession.equipment.price);
@@ -28,7 +28,7 @@ int finProfession(const char* fname, Profession profession) {
 }
 
 
-Profession foutProfession(const char* fname) {
+Profession finProfession(const char* fname) {
     FILE *file = fopen(fname, "r");
     Profession profession;
     int res = fscanf(file, "%s %lf %s %lf", &profession.name, &profession.wage_rate, &profession.equipment.name, \

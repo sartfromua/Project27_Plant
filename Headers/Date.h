@@ -8,7 +8,7 @@ typedef struct {
 
 
 date inputDate();
-void printDate();
-int finDate(const char* fname, date date1);
-date foutDate(const char* fname);
+void printDate(date date1);
+int foutDate(const char* fname, date date1);
+date finDate(const char* fname);
 #endif // _DATE_H_

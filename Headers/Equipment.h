@@ -6,9 +6,9 @@ typedef struct {
     double price;
 } Equipment;
 
-void printEquipment();
+void printEquipment(Equipment equip);
 Equipment inputEquipment();
-int finEquipment(const char* fname, Equipment equipment);
-Equipment foutEquipment(const char* fname);
+Equipment finEquipment(const char* fname);
+int foutEquipment(const char* fname, Equipment equipment);
 
 #endif // _EQUIPMENT_H_

@@ -17,7 +17,7 @@ void printEquipment(Equipment equip) {
 }
 
 
-int finEquipment(const char* fname, Equipment equipment) {
+int foutEquipment(const char* fname, Equipment equipment) {
     FILE *file = fopen(fname, "w");
     int res = fprintf(file, "%s %lf", equipment.name, equipment.price);
     fclose(file);
@@ -25,7 +25,7 @@ int finEquipment(const char* fname, Equipment equipment) {
 }
 
 
-Equipment foutEquipment(const char* fname) {
+Equipment finEquipment(const char* fname) {
     FILE *file = fopen(fname, "r");
     Equipment equipment;
     int res = fscanf(file, "%s %lf", &equipment.name, &equipment.price);

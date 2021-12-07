@@ -33,7 +33,7 @@ Employee inputEmployee() {
 }
 
 
-int finEmployee(const char* fname, Employee employee) {
+int foutEmployee(const char* fname, Employee employee) {
     FILE *file = fopen(fname, "w");
     int res = fprintf(file, "%d %d %d %s %s %s %s %lf %s %lf %lf %d %d %d %lf %lf", employee.person.birthday.day, \
                       employee.person.birthday.month, \
@@ -46,7 +46,7 @@ int finEmployee(const char* fname, Employee employee) {
 }
 
 
-Employee foutEmployee(const char* fname) {
+Employee finEmployee(const char* fname) {
     FILE *file = fopen(fname, "r");
     Employee employee;
     int res = fscanf(file, "%d %d %d %s %s %s %s %lf %s %lf %lf %d %d %d %lf %lf", &employee.person.birthday.day, \
